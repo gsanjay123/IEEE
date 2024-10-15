@@ -21,107 +21,92 @@
     <body id="section_1">
 
         <header class="site-header">
-            <div class="container">
-                <div class="row">
+            <div class="container-fluid"> <!-- Changed container to container-fluid for full-width -->
+                <div class="row align-items-center"> <!-- Added align-items-center to vertically center content -->
                     
-                    <div class="col-lg-8 col-12 d-flex flex-wrap">
-                        <div class="mb-1 me-1 mt-0">
-                            <img src="images/Thiagarajar_College_of_Engineering_logo.png" class="logo img-fluid" alt="" style="width: auto; max-width: 30px; height: auto;">
+                    <div class="col-lg-8 col-12 d-flex flex-wrap text-start"> <!-- Added text-start to move content to left -->
+                        <div class="mb-1 me-2 mt-0">
+                            <img src="images/Thiagarajar_College_of_Engineering_logo.png" class="logo img-fluid" alt="TCE Logo" style="width: auto; max-width: 40px; height: auto;"> <!-- Increased max-width slightly -->
                         </div>
-                        <p class="d-flex me-4 mb-0">
-                            <!-- <i class="bi-geo-alt me-2"></i> -->
+                        <h6 class="d-flex me-4 mb-0 align-items-center" style="color: white;">
                             Thiagarajar College Of Engineering, Madurai
-                        </p>
-
-                        <p class="d-flex mb-0">
+                        </h6>                        
+        
+                        <p class="d-flex mb-0 align-items-center">
                             <i class="bi-envelope me-2"></i>
-
-                            <a href="mailto:info@tce.edu">
-                                info@tce.edu
-                            </a>
+                            <a href="mailto:info@tce.edu">info@tce.edu</a>
                         </p>
                     </div>
-
+        
                     <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
                         <ul class="social-icon">
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link bi-twitter"></a>
                             </li>
-
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link bi-facebook"></a>
                             </li>
-
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link bi-instagram"></a>
                             </li>
-
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link bi-youtube"></a>
                             </li>
-
                             <li class="social-icon-item">
                                 <a href="#" class="social-icon-link bi-whatsapp"></a>
                             </li>
                         </ul>
                     </div>
-
+        
                 </div>
             </div>
         </header>
+        
 
         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/IEEEE.png" class="logo img-fluid" alt="IEEE">&nbsp;&nbsp;
-                    <span>
-                        INTERNATIONAL CONFERENCE
+            <div class="container-fluid">
+                <!-- Logo and Conference Name -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/IEEEE.png" class="logo img-fluid me-2" alt="IEEE" style="max-height: 50px;">&nbsp;&nbsp;
+                    <span style="font-weight: bold;">
+                        FIRST INTERNATIONAL CONFERENCE
                         <small>SCOPE 2025</small>
                     </span>
                 </a>
-
+        
+                <!-- Navbar Toggle for Mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+        
+                <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#top">Home</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_2">About</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_3">Call for Papers</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_4">Committee</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_5">Fees</a>
                         </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link click-scroll dropdown-toggle" href="" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Others</a>
-
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-
-                                <li><a class="dropdown-item" href="#section_7">Accomodation</a></li>
-
+                                <li><a class="dropdown-item" href="#section_7">Accommodation</a></li>
                                 <li><a class="dropdown-item" href="news.html" target="_blank">Places to Visit</a></li>
                             </ul>
                         </li>
-
-
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_6">Contact</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link custom-btn custom-border-btn btn" href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICNSBT2025" target="_blank">Apply</a>
                         </li>
@@ -129,9 +114,9 @@
                 </div>
             </div>
         </nav>
+        
 
         <main>
-
             <section class="hero-section hero-section-full-height">
                 <div class="container-fluid">
                     <div class="row">
@@ -181,10 +166,35 @@
                                 </button>
                             </div>
                         </div>
-
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#updateModal" class="scrolling-link">
+                            Click here for further updates
+                        </a>
                     </div>
                 </div>
+                
             </section>
+
+            <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="updateModalLabel">Further Updates</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Your update content goes here. You can add more information or links as needed.</p>
+                            <p>Stay tuned for the latest news!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <!--<section class="section-padding">
@@ -249,8 +259,10 @@
 
                         <div class="col-lg-6 col-12">
                             <div class="custom-text-box">
-                                <h2 class="mb-2">About Us</h2>
-
+                                <a href="https://www.tce.edu" target="_blank" style="text-decoration: none;">
+                                    <h2 class="mb-2" style="color: inherit;">About Us</h2>
+                                </a>
+                                
                                 <h5 class="mb-3">Welcome to Thiagarajar College of Engineering,</h5>
 
                                 <p class="mb-0">Established in 1957 by philanthropist and industrialist Late Shri. Karumuttu Thiagarajan Chettiar, Thiagarajar College of Engineering (TCE) is a Government Aided Institution affiliated with Anna University in Madurai. The college offers 11 Undergraduate programs, 7 Postgraduate programs, and Doctoral programs in Engineering, Architecture, and Science. TCE's courses are approved by AICTE and COA, and the programs have been accredited by the NBA.</p>
@@ -359,6 +371,7 @@
                     </div> -->
                 </div>
             </section>
+            
 
 
             <section class="about-section section-padding">
@@ -416,12 +429,17 @@
                         <div class="col-lg-6 col-md-7 col-12">
                             <div class="custom-text-block"><br><br>
                                 <!-- Publication Information -->
-                                <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative;">
+
+                                    <!-- Sticky note-style image -->
+                                    <img src="../IEEE - SCOPUS 2025/images/IeEe.png" alt="Sticky Note" style="float: right; width: 100px; height: 100px; background-color: #befdf7; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transform: rotate(-5deg); border-radius: 5px; margin-left: 15px;">
+                                
                                     <p style="font-size: 18px; margin-bottom: 10px;">
                                         <i class="bi bi-journal-text" style="color: #007bff; font-size: 20px; margin-right: 8px;"></i> 
                                         <strong>Publication:</strong> The Proceedings of SCOPE 2025 will be forwarded for the possible inclusion in IEEE Xplore, the Digital Library of IEEE, which is indexed in leading databases.
                                     </p>
                                 </div>
+                                
             
                                 <!-- Conference Theme -->
                                 <div class="col-lg-12 col-12">
@@ -466,10 +484,10 @@
 
                         <div class="col-lg-6 col-12">
                     
-                                <a href="#" class="me-4">Download Broucher 1</a>
-                                <a href="#" class="me-4">Download Broucher 2</a>
-                        
-                            <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICNSBT2025" target="_blank" class="custom-btn btn smoothscroll">Apply for submission</a>
+                                <a href="#" class="me-4">Download Broucher</a>
+                                <!-- <a href="#" class="me-4">Download Broucher 2</a> -->
+                            <a href="https://docs.google.com/forms/d/1QfYCNd2ABIl-nuIXnJspSHQtIVSuSAcSnjEd_L9nBs4/edit" target="_blank" class="custom-btn btn smoothscroll">Paper Submission</a>&nbsp;
+                            <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICNSBT2025" target="_blank" class="custom-btn btn smoothscroll">Register Now</a>
                         </div>
 
                     </div>
@@ -761,8 +779,10 @@
                                 <td style="color: #333333; padding: 10px; border-bottom: 1px solid #cccccc;">Rs.2500</td>
                             </tr>
                         </tbody>
-                        <a href="https://docs.google.com/forms/d/1QfYCNd2ABIl-nuIXnJspSHQtIVSuSAcSnjEd_L9nBs4/edit" class="me-4">Bank Details</a>
-
+                        <a href="https://docs.google.com/forms/d/1QfYCNd2ABIl-nuIXnJspSHQtIVSuSAcSnjEd_L9nBs4/edit" class="me-4" title="This is about payment details">
+                            <i class="bi bi-hand-index"></i>&nbsp;Payment Details
+                        </a>
+                        
                     </table>
                 </div>
             </div>
@@ -1106,9 +1126,9 @@
                         <a href="#" class="custom-btn btn mt-3">Get Direction</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-12 mb-6">
+                <!-- <div class="col-lg-3 col-12 mb-6">
                     <img src="images/Ieeescopus.jpg" class="logo img-fluid" alt="" style="width: 100%; max-width: 300px; height: auto;">
-                </div>
+                </div> -->
             </div>
 
             <div class="site-footer-bottom">
@@ -1148,6 +1168,38 @@
                 </div>
             </div>
         </footer>
+
+        <style>
+            .scrolling-link {
+                display: inline-block;
+                padding: 12px 24px; /* Slightly increased padding for a more spacious feel */
+                background: linear-gradient(90deg, #f7c946, #eeb65b); /* Gradient background */
+                color: #fff; /* Text color */
+                text-transform: uppercase; /* Uppercase text */
+                font-weight: bold; /* Bold font */
+                text-decoration: none; /* Remove underline */
+                border-radius: 25px; /* Rounded corners */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+                animation: scrollText 10s linear infinite; /* Scroll animation */
+                white-space: nowrap; /* Prevent text wrapping */
+                transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions for hover effects */
+            }
+        
+            /* Hover effect */
+            .scrolling-link:hover {
+                transform: scale(1.05); /* Slightly enlarge on hover */
+                background: linear-gradient(90deg, #f39c12, #f7c946); /* Reverse gradient on hover */
+            }
+        
+            @keyframes scrollText {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
