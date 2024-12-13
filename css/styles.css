@@ -1735,6 +1735,13 @@ blockquote::before {
   margin-bottom: 15px;
 }
 
+.workshop-side {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #795548; /* Dark golden-brown */
+  margin-bottom: 15px;
+}
+
 .workshop-list {
   list-style-type: disc;
   padding-left: 20px;
