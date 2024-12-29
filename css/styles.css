@@ -172,7 +172,7 @@ strong {
 }
 
 #section_3{
-  background: #f7ecff;
+  background: #ffecec;
 }
 
 .section-bg {
@@ -752,6 +752,15 @@ strong {
 .volunteer-section .custom-block-body p {
   line-height: 1.7;
 }
+
+.custom-block .custom-block-body ul{
+  padding: 0px;
+}
+
+.custom-block .custom-block-body ul li h5{
+  font-size: 20px;
+}
+
 
 
 /*---------------------------------------
