@@ -1915,3 +1915,77 @@ blockquote::before {
   border-radius: 10px; /* Rounds the edges, adjust the value as needed */
   border: 2px solid #ddd; /* Optional: Add a border for better visibility */
 }
+
+
+/* Container for the two columns */
+.workshop-columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* Individual column styling */
+.workshop-column {
+  flex: 1;
+}
+
+/* Title styles */
+.workshop-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Subheading styles */
+.workshop-side {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  color: #007BFF;
+}
+
+/* List styling */
+.workshop-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.workshop-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+/* Optional: Add hover effect for better interaction */
+.workshop-list li:hover {
+  color: #0056b3;
+  cursor: pointer;
+}
+
+
+/*---------------------------------------
+  FAQs              
+-----------------------------------------*/
+.faq-section .accordion-item {
+  border: 0;
+}
+
+.faq-section .accordion-button {
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-weight-semibold);
+}
+
+.faq-section .accordion-item:first-of-type .accordion-button {
+  border-radius: var(--border-radius-large);
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  border-radius: var(--border-radius-large);
+  box-shadow: none;
+  color: var(--primary-color);
+}
+
+.faq-section .accordion-body {
+  color: var(--p-color);
+  font-size: var(--btn-font-size);
+  line-height: 40px;
+}
