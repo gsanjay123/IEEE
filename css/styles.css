@@ -941,6 +941,36 @@ blockquote::before {
 }
 
 
+.gui-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.gui-section::before {
+  content: "";
+  background-color: #26c8c8;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: -30px;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.gui-section::after {
+  content: "";
+  background-color: #84ec2e;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+  left: 1370px;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+}
+
 /*---------------------------------------
   TESTIMONIAL CAROUSEL              
 -----------------------------------------*/
