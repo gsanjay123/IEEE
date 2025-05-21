@@ -20,12 +20,18 @@ $.each(sectionArray, function(index, value){
          
      });
     
-    $('.click-scroll').eq(index).click(function(e){
-        var offsetClick = $('#' + 'section_' + value).offset().top - 90;
-        e.preventDefault();
+    $('.click-scroll').click(function(e){
+          e.preventDefault();
+
+        var targetId = $(this).attr('href');
+        // debugger;
+        var offsetClick = $(targetId).offset().top - 90;
+        // debugger;
+        // var offsetClick = $('#' + 'section_' + value).offset().top - 90;
+        // e.preventDefault();
         $('html, body').animate({
             'scrollTop':offsetClick
-        }, 300)
+        }, 0)
     });
     
 });

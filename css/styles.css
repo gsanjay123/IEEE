@@ -170,7 +170,7 @@ strong {
 }
 
 #section_3 {
-  background: #ffecec;
+  background: var(--section-bg-color);
 }
 
 .section-bg {
