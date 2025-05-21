@@ -33,7 +33,7 @@
                         </div>
                         <h4 class="mb-0" style="color: white; font-size: 1.2rem; line-height: 1.5; text-align: center;">
                             <!-- <i class="bi-geo-alt me-2"></i> -->
-                            Thiagarajar College Of Engineering, Madurai
+                            Thiagarajar College Of Engineering, Madurai - 625015
                             <p class="mb-0">
                                 <i class="bi-envelope me-2"></i>
                                 <a href="mailto:scopetce@tce.edu" style="font-size: 1rem; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
@@ -867,7 +867,7 @@
                             </div>
 
                             <div class="blurred-background p-4 mb-3 w-100">
-                                <li>Make sure to prepare the paper in the format prescribed. <a href="https://rctce2025.tce.edu/RC2025template.pdf">Click here</a> to download the format.</li>
+                                <li>Make sure to prepare the paper in the format prescribed. <a href="js/pdf/SCOPE2025_Template.pdf">Click here</a> to download the format.</li>
                             </div>
 
                             </div>
@@ -909,7 +909,7 @@
                                                Paper should not exceed more than 6 pages.
                                             </li>
                                             <li>
-                                                Make sure to prepare the paper in the format prescribed. <a href="https://rctce2025.tce.edu/RC2025template.pdf">Click here</a> to download the format.
+                                                Make sure to prepare the paper in the format prescribed. <a href="js/pdf/SCOPE2025_Template.pdf">Click here</a> to download the format.
                                             </li>
                                             <!-- <li>Authors are invited to submit full papers in IEEE PDF Xpress compatible pdf format.</li>
                                             <li>Email submissions will NOT be accepted.</li>
@@ -1715,7 +1715,7 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-md-7 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2024 <a href="#">TCE</a> CSE.
+                            <p class="copyright-text mb-0">Copyright © <span id="year"></span> <a href="#">TCE</a> CSE.
                         	Design: <a href="https://nexgendev.in">NEXGENDEV</a></p>
                         </div>
                         
@@ -1826,6 +1826,9 @@
         <script src="js/click-scroll.js"></script>
         <script src="js/counter.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
 
     </body>
 </html>

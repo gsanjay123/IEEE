@@ -1441,6 +1441,12 @@ blockquote::before {
   }
 }
 
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  .navbar-brand span {
+    font-size: 12px;
+    /* Reduces font size on smaller screens */
+  }
+}
 @media (max-width: 768px) {
   .navbar-brand span {
     font-size: 12px;
