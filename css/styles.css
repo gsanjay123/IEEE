@@ -949,7 +949,7 @@ blockquote::before {
 
 .gui-section::before {
   content: "";
-  background-color: #26c8c8;
+  background-color: #860202;
   border-radius: 50%;
   position: absolute;
   top: -100px;
@@ -961,7 +961,7 @@ blockquote::before {
 
 .gui-section::after {
   content: "";
-  background-color: #84ec2e;
+  background-color: #7c7c7c;
   border-radius: 50%;
   position: absolute;
   bottom: -120px;
