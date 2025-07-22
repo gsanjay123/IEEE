@@ -386,7 +386,7 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--p-color);
+  color:black;
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
