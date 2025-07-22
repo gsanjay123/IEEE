@@ -2019,7 +2019,7 @@ blockquote::before {
   /* Maintain aspect ratio */
   object-fit: contain;
   /* Ensure the image fits within the dimensions */
-  border-radius: 10px;
+  border-radius: 5px;
   /* Rounds the edges, adjust the value as needed */
   /* border: 2px solid #ddd; */
   /* Optional: Add a border for better visibility */
